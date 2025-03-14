@@ -5,12 +5,9 @@ import { UserController } from "./controllers/UserController";
 import { isAuthenticated } from "./middlewares/isAuthenticated";
 import { CategoryController } from "./controllers/CategoryController";
 import { ProductController } from "./controllers/ProductController";
-import uploadConfig from './config/multer'
 import { OrderController } from "./controllers/OrderController";
 
 const router = Router();
-
-const upload = multer(uploadConfig.upload("./tmp"))
 
 const userController = new UserController();
 router.post('/user', userController.create.bind(userController))

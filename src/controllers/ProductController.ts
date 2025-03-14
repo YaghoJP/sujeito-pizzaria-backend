@@ -24,7 +24,7 @@ class ProductController{
                 throw new Error("Error upload file")
             }
             
-            const file: UploadedFile = req.files['file']
+            const file: UploadedFile = req.files['file'] as UploadedFile;
 
             const resultFile: UploadApiResponse = await new Promise((resolve, reject)=>{
                 cloudinary.uploader.upload_stream({}, function (error, result){

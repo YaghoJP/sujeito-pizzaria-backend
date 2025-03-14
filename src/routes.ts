@@ -1,5 +1,4 @@
 import { Router } from "express";
-import multer from "multer";
 //Importações dos controllers
 import { UserController } from "./controllers/UserController";
 import { isAuthenticated } from "./middlewares/isAuthenticated";

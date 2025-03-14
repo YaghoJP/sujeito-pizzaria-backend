@@ -2,7 +2,6 @@ import express, { Request, Response, NextFunction } from "express";
 import 'express-async-errors'
 import cors from 'cors'
 import { router } from "./routes";
-import path from 'path'
 import fileUpload from "express-fileupload";
 
 const app = express();

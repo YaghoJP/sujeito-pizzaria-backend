@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-"scripts": {
+  "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "build": "tsc --build",
     "start": "node dist/server.js",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.4.1",
+    "@types/node": "^22.13.10",
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.6.0",
     "cors": "^2.8.5",
